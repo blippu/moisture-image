@@ -20,5 +20,5 @@ basic.forever(function () {
         }
     }
 myImage.showImage(0)
-    basic.pause(5000)
+    basic.pause(60000)
 })
