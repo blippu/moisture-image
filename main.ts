@@ -9,8 +9,7 @@ let myImage = images.createImage(`
     `)
 basic.forever(function () {
     moisture = pins.analogReadPin(AnalogPin.P1)
-    moisture = moisture / 3000
-    moisture = moisture * 25
+    moisture = moisture / 3000 * 25
     index = 0
     for (let column = 4; column >=0 ; column--) {
         for (let row = 0; row <= 4; row++) {
