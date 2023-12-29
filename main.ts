@@ -1,5 +1,5 @@
-let index = 0
 let moisture = 0
+let index = 0
 let myImage = images.createImage(`
     . . . . .
     . . . . .
@@ -7,6 +7,7 @@ let myImage = images.createImage(`
     . . . . .
     . . . . .
     `)
+led.setBrightness(2)
 basic.forever(function () {
     moisture = pins.analogReadPin(AnalogPin.P1)
     moisture = moisture / 3000 * 25
@@ -20,5 +21,5 @@ basic.forever(function () {
         }
     }
 myImage.showImage(0)
-    basic.pause(60000)
+    basic.pause(3600000)
 })
