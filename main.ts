@@ -1,5 +1,5 @@
-let moisture = 0
 let index = 0
+let moisture = 0
 let myImage = images.createImage(`
     . . . . .
     . . . . .
@@ -17,9 +17,9 @@ basic.forever(function () {
             if (index <= moisture-1) {
                 index++
                 myImage.setPixel(row, column, true);
+                myImage.showImage(0)
             }
         }
     }
-myImage.showImage(0)
-    basic.pause(3600000)
+basic.pause(3600000)
 })
